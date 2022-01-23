@@ -8,6 +8,8 @@ Darker green: #4B6128;
 Lighter green: #8C916F;
 */
 
+header {
+  padding: 0;
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
