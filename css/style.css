@@ -10,7 +10,55 @@ Lighter green: #8C916F;
 
 header {
   background-color: #f1f0ee;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+nav > ul {
+  list-style-type: none;
   padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4B6128;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4B6128;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8C916F;
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222529;
+}
+
+nav > ul > li > a:focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8C916F;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
