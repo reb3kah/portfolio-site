@@ -112,13 +112,34 @@ a:focus {
 }
 
 #hero {
-
+    background-color: #f1f0ee;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%
 }
 
-#work {
+#hero h1 {
+    text-align: center;
+}
 
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 #contact {
 
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.logo {
+  max-width: 250px;
 }
