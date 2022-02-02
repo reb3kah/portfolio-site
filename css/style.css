@@ -12,8 +12,9 @@ header {
   background-color: #f1f0ee;
   padding: 10px 0;
   text-align: center;
-  position: relative;
+  position: fixed;
   box-shadow: 0px 0px 15px rgba(50,50,50, 0.25);
+  width: 100%;
 }
 
 nav > ul {
@@ -58,6 +59,10 @@ nav > ul > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
   color: #8C916F;
+}
+
+main {
+  padding-top: 168.02px;
 }
 
 body {
@@ -185,7 +190,7 @@ a:focus {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 150px;
 }
 
 .row {
@@ -194,4 +199,8 @@ a:focus {
 
 .logo {
   max-width: 250px;
+}
+
+.linkedin {
+  max-width: 100px;
 }
