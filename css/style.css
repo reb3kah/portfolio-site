@@ -208,6 +208,9 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   max-width: 50px;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /*screen sizes*/
 /*medium screen*/
