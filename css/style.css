@@ -62,7 +62,7 @@ nav > ul > li > a:focus {
 }
 
 main {
-  padding-top: 168.02px;
+  padding-top: 168px;
 }
 
 body {
@@ -84,7 +84,7 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 700
 }
 
 h3 {
@@ -118,12 +118,15 @@ a:focus {
   text-decoration: underline;
 }
 
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
 /*Primary button*/
 .button {
   display: inline-block;
   background-color: #4B6128;
   color: #ffffff;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #4B6128;
@@ -170,7 +173,7 @@ a:focus {
 
 #hero {
     background-color: #f1f0ee;
-    padding: 20px 0;
+    padding: 30px 0;
     display: inline-block;
     width: 100%
 }
@@ -190,7 +193,7 @@ a:focus {
 
 /* Layout styling */
 .container {
-  padding: 0 150px;
+  padding: 0 15px;
 }
 
 .row {
@@ -203,4 +206,124 @@ a:focus {
 
 .linkedin {
   max-width: 100px;
+}
+
+
+/*screen sizes*/
+/*medium screen*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 25px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 45%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  h1 {
+    text-align: center;
+    }
+
+  h2 {
+    text-align: center;
+    }
+
+  .header-left {
+    text-align: left;
+  }
+
+  h3 {
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+    .header-center {
+      text-align: center;
+    }
+
+    ul {
+      display: table;
+      margin: 0 auto;
+    }
+
+}
+
+/*large screen*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 53.33%;
+  }
+
+  .col-lg-5 {
+    width: 36.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
 }
