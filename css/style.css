@@ -118,8 +118,6 @@ a:focus {
   text-decoration: underline;
 }
 
-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-
 /*Primary button*/
 .button {
   display: inline-block;
@@ -239,7 +237,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   }
 
   .col-md-6 {
-    width: 45%;
+    width: 50%;
   }
 
   [class*="col-"] {
@@ -289,11 +287,11 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 /*large screen*/
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 53.33%;
+    width: 58.33%;
   }
 
   .col-lg-5 {
-    width: 36.66%;
+    width: 41.66%;
   }
 
   .container {
