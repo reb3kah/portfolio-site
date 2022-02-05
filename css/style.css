@@ -10,8 +10,7 @@ Lighter green: #8C916F;
 
 header {
   background-color: #f1f0ee;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 0 4px;
   position: fixed;
   box-shadow: 0px 0px 15px rgba(50,50,50, 0.25);
   width: 100%;
@@ -20,10 +19,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -61,8 +57,41 @@ nav > ul > li > a:focus {
   color: #8C916F;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #8C916F;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 main {
-  padding-top: 168px;
+  padding-top: 56px;
 }
 
 body {
@@ -199,7 +228,7 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .linkedin {
@@ -221,11 +250,31 @@ a:focus {
   nav {
     width: auto;
     float: right;
-    margin-top: 25px;
+    margin-top: 10px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .logo {
+    max-width: 250px;
   }
 
   main {
-    padding-top: 99px;
+    padding-top:125px;
   }
 
   body {
@@ -273,14 +322,14 @@ a:focus {
     margin-top: 0;
   }
 
-    .header-center {
-      text-align: center;
-    }
+  .header-center {
+    text-align: center;
+  }
 
-    ul {
-      display: table;
-      margin: 0 auto;
-    }
+  ul {
+    display: table;
+    margin: 0 auto;
+  }
 
 }
 
