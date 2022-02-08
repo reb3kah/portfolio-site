@@ -80,6 +80,7 @@ nav > ul > li > a:focus {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -215,7 +216,10 @@ a:focus {
 }
 
 #contact {
-
+  background-color: #F1F0EE;
+  text-align: center;
+  color: #222529;
+  padding: 0.67em;
 }
 
 /* Layout styling */
